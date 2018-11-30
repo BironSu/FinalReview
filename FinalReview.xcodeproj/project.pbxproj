@@ -15,6 +15,11 @@
 		8173772921B061A100416943 /* FinalReviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173772821B061A100416943 /* FinalReviewTests.swift */; };
 		8173773421B061AB00416943 /* Ad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173773321B061AB00416943 /* Ad.swift */; };
 		8173773621B061B100416943 /* InstaPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8173773521B061B100416943 /* InstaPost.swift */; };
+		934E0D4621B0942400963371 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E0D4521B0942400963371 /* ImageCell.swift */; };
+		934E0D4821B09E8F00963371 /* AdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E0D4721B09E8F00963371 /* AdCell.swift */; };
+		934E0D4A21B0E5AA00963371 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E0D4921B0E5AA00963371 /* DetailViewController.swift */; };
+		934E0D4C21B0EC2700963371 /* AdvertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E0D4B21B0EC2700963371 /* AdvertViewController.swift */; };
+		934E0D4E21B0EDEB00963371 /* AdvertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934E0D4D21B0EDEB00963371 /* AdvertCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,11 @@
 		8173772A21B061A100416943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8173773321B061AB00416943 /* Ad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ad.swift; sourceTree = "<group>"; };
 		8173773521B061B100416943 /* InstaPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaPost.swift; sourceTree = "<group>"; };
+		934E0D4521B0942400963371 /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		934E0D4721B09E8F00963371 /* AdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdCell.swift; sourceTree = "<group>"; };
+		934E0D4921B0E5AA00963371 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		934E0D4B21B0EC2700963371 /* AdvertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertViewController.swift; sourceTree = "<group>"; };
+		934E0D4D21B0EDEB00963371 /* AdvertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,11 @@
 			children = (
 				8173771321B0619F00416943 /* AppDelegate.swift */,
 				8173771521B0619F00416943 /* ViewController.swift */,
+				934E0D4B21B0EC2700963371 /* AdvertViewController.swift */,
+				934E0D4921B0E5AA00963371 /* DetailViewController.swift */,
+				934E0D4721B09E8F00963371 /* AdCell.swift */,
+				934E0D4521B0942400963371 /* ImageCell.swift */,
+				934E0D4D21B0EDEB00963371 /* AdvertCell.swift */,
 				8173771721B0619F00416943 /* Main.storyboard */,
 				8173771A21B061A100416943 /* Assets.xcassets */,
 				8173771C21B061A100416943 /* LaunchScreen.storyboard */,
@@ -203,10 +218,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934E0D4821B09E8F00963371 /* AdCell.swift in Sources */,
 				8173771621B0619F00416943 /* ViewController.swift in Sources */,
+				934E0D4C21B0EC2700963371 /* AdvertViewController.swift in Sources */,
 				8173771421B0619F00416943 /* AppDelegate.swift in Sources */,
 				8173773421B061AB00416943 /* Ad.swift in Sources */,
 				8173773621B061B100416943 /* InstaPost.swift in Sources */,
+				934E0D4621B0942400963371 /* ImageCell.swift in Sources */,
+				934E0D4A21B0E5AA00963371 /* DetailViewController.swift in Sources */,
+				934E0D4E21B0EDEB00963371 /* AdvertCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
