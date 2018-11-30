@@ -129,43 +129,54 @@
         <scene sceneID="xFA-jq-4Sq">
             <objects>
                 <viewController storyboardIdentifier="adVC" id="PTy-g0-klX" customClass="AdvertViewController" customModule="FinalReview" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="wqr-MH-L25">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="wqr-MH-L25">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="qds-DF-5Xo">
-                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                            <button opaque="NO" alpha="0.5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4J-hE-l8y">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <connections>
+                                    <action selector="dismiss:" destination="PTy-g0-klX" eventType="touchUpInside" id="zIc-Ii-hgZ"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qds-DF-5Xo">
+                                <rect key="frame" x="62" y="174" width="290" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Qua-9o-wmb">
-                                <rect key="frame" x="0.0" y="100" width="414" height="762"/>
+                                <rect key="frame" x="62" y="230" width="290" height="627"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="moneyList" rowHeight="106" id="gUi-Md-Cha" customClass="AdvertCell" customModule="FinalReview" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="106"/>
+                                        <rect key="frame" x="0.0" y="28" width="290" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gUi-Md-Cha" id="oar-pf-JGK">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="105.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="290" height="105.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40308648767605632" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Qua-9o-wmb" firstAttribute="leading" secondItem="Yhs-GD-SoD" secondAttribute="leading" id="CPE-fX-mav"/>
-                            <constraint firstItem="Yhs-GD-SoD" firstAttribute="bottom" secondItem="Qua-9o-wmb" secondAttribute="bottom" id="DF6-yu-PLW"/>
-                            <constraint firstItem="Qua-9o-wmb" firstAttribute="top" secondItem="qds-DF-5Xo" secondAttribute="bottom" id="QzY-Cd-MTb"/>
-                            <constraint firstItem="qds-DF-5Xo" firstAttribute="leading" secondItem="Yhs-GD-SoD" secondAttribute="leading" id="dhq-qc-ZOy"/>
-                            <constraint firstItem="Yhs-GD-SoD" firstAttribute="trailing" secondItem="Qua-9o-wmb" secondAttribute="trailing" id="e2X-4U-hdK"/>
-                            <constraint firstItem="qds-DF-5Xo" firstAttribute="top" secondItem="Yhs-GD-SoD" secondAttribute="top" id="k9j-gl-oaH"/>
-                            <constraint firstAttribute="trailing" secondItem="qds-DF-5Xo" secondAttribute="trailing" id="vZ9-rM-MRo"/>
+                            <constraint firstItem="Qua-9o-wmb" firstAttribute="centerY" secondItem="Yhs-GD-SoD" secondAttribute="centerY" multiplier="1.2" id="IEr-Dp-2yM"/>
+                            <constraint firstItem="Qua-9o-wmb" firstAttribute="height" secondItem="wqr-MH-L25" secondAttribute="height" multiplier="0.7" id="J87-JJ-ffL"/>
+                            <constraint firstItem="Qua-9o-wmb" firstAttribute="width" secondItem="wqr-MH-L25" secondAttribute="width" multiplier="0.7" id="UOV-CB-9Zw"/>
+                            <constraint firstItem="Qua-9o-wmb" firstAttribute="top" secondItem="qds-DF-5Xo" secondAttribute="bottom" id="Wh0-Nl-b8V"/>
+                            <constraint firstItem="Qua-9o-wmb" firstAttribute="centerX" secondItem="Yhs-GD-SoD" secondAttribute="centerX" id="Z1Q-cg-Bpl"/>
+                            <constraint firstItem="n4J-hE-l8y" firstAttribute="width" secondItem="wqr-MH-L25" secondAttribute="width" id="deW-sN-a9F"/>
+                            <constraint firstItem="n4J-hE-l8y" firstAttribute="centerX" secondItem="Yhs-GD-SoD" secondAttribute="centerX" id="hvA-jD-QBE"/>
+                            <constraint firstItem="n4J-hE-l8y" firstAttribute="centerY" secondItem="Yhs-GD-SoD" secondAttribute="centerY" id="mex-zs-cBi"/>
+                            <constraint firstItem="qds-DF-5Xo" firstAttribute="width" secondItem="Qua-9o-wmb" secondAttribute="width" id="niu-Uv-e5R"/>
+                            <constraint firstItem="qds-DF-5Xo" firstAttribute="centerX" secondItem="Qua-9o-wmb" secondAttribute="centerX" id="ocW-ZL-ASt"/>
+                            <constraint firstItem="n4J-hE-l8y" firstAttribute="height" secondItem="wqr-MH-L25" secondAttribute="height" id="tyB-LU-wy4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yhs-GD-SoD"/>
                     </view>
                     <connections>
                         <outlet property="adTableView" destination="Qua-9o-wmb" id="NoH-IQ-66y"/>
+                        <outlet property="dismiss" destination="n4J-hE-l8y" id="h7d-1R-HzP"/>
                         <outlet property="searchBar" destination="qds-DF-5Xo" id="bVt-ma-ZSe"/>
                     </connections>
                 </viewController>

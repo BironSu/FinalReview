@@ -17,10 +17,12 @@ class AdvertViewController: UIViewController {
     
     @IBOutlet weak var adTableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var dismiss: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         adTableView.dataSource = self
         searchBar.delegate = self
+        dismiss.isEnabled = true
     }
 }
 extension AdvertViewController: UITableViewDataSource {
@@ -32,6 +34,10 @@ extension AdvertViewController: UITableViewDataSource {
         cell.textLabel?.text = ads[indexPath.row].prize
         return cell
     }
+    @IBAction func dismiss (_ sender: UIButton){
+        dismiss(animated: true, completion: nil)
+    }
+    
 }
 extension AdvertViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
